@@ -26,13 +26,12 @@ void invert() {
 }
 int main() {
 	memset(mark, false, sizeof(mark));
-	adj[1].pb(5);
-	adj[2].pb(1);adj[2].pb(4);adj[2].pb(6);
-	adj[3].pb(1);adj[3].pb(5);
-	adj[4].pb(6);adj[4].pb(2);
-	adj[5].pb(1);adj[5].pb(2);
-	adj[6].pb(2);adj[6].pb(7);
-	adj[7].pb(4);adj[7].pb(5);
+	adj[1].pb(4);adj[1].pb(5);
+	adj[2].pb(3);
+	adj[3].pb(7);adj[3].pb(4);
+	adj[4].pb(2);
+	adj[5].pb(3);
+	adj[6].pb(1);
 	for(int c = 1; c <= n; c++) {
 		if(!mark[c]) dfs(c);
 	}
